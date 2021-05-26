@@ -1,0 +1,17 @@
+.ouraddress {
+    padding: 55px 0px 70px 0px;
+    &__title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 45px;
+        margin-bottom: 70px;
+    }
+    &__image {
+        width: 1170px;
+        height: 590px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+}

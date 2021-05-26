@@ -1,0 +1,20 @@
+.details {
+    height: 340px;
+    background: url('../img/bg-details.jpg') center center / cover no-repeat;
+    color: var(--text-color);
+    padding: 75px 0px;
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        width: 470px;
+        margin-bottom: 45px;
+    }
+    &__wrapper {
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 585px;
+    }
+}

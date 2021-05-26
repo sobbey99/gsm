@@ -1,0 +1,48 @@
+.ways {
+    background-color: var(--bg-maincolor);
+    color: var(--text-color);
+    padding: 60px 0 55px 0px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 55px;
+    }
+    &-item {
+        width: 370px;
+        min-height: 440px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 35px 30px 0px 30px;
+        position: relative;
+        // justify-content: space-between;
+        &__icon {
+            height: 145px;
+        }
+        &__title {
+            margin-bottom: 25px;
+            font-weight: 600;
+            font-size: 25px;
+        }
+        &__text{
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        &__counter {
+            color: #858585;
+            font-weight: 700;
+            font-size: 72px;
+            position: absolute;
+            bottom: 5px;
+            left: 20px;
+            line-height: 1em;
+        }
+    }
+}

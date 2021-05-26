@@ -23,3 +23,23 @@ h1,h2,h3,h4,h5,h6,p,ol,ul,address {
     padding: 0;
 }
 
+//CONECT MIXINS AND VARIABLES
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/buttons';
+//CONECT MIXINS AND VARIABLES
+
+
+// CONNECT SECTIONS STYLES
+@import 'blocks/header-section';
+@import 'blocks/footer-section';
+@import 'blocks/main-section';
+@import 'blocks/brands-section';
+@import 'blocks/advantages-section';
+@import 'blocks/phone-section';
+@import 'blocks/insurance-section';
+@import 'blocks/details-section';
+@import 'blocks/ways-section';
+@import 'blocks/ouradress-section';
+@import 'blocks/buysell-section';
+@import 'blocks/info-section';

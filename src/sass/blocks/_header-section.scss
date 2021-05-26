@@ -1,0 +1,93 @@
+.header {
+    margin-top: 30px;
+    color: var(--text-color);
+    &-main {
+        background-color: var(--bg-maincolor);
+        height: 155px;
+        margin-bottom: 90px;
+        &__wrapper {
+            display: flex;
+            position: relative;
+            padding: 30px 0px 45px 0px;
+            justify-content: space-between;
+        }
+        &__logo {
+            width: 110px;
+            height: 185px;
+            position: absolute;
+            top: -15px;
+            a{
+                text-decoration: none;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        &__descr {
+            padding-left: 200px;
+            padding-right: 90px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            p.first {
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+        &__wrappicons {
+            width: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 80px;
+            a {
+                text-decoration: none;
+            }
+        }
+        &__contacts {
+            text-align: center;
+            a {
+                display: block;
+                text-decoration: none;
+                color: var(--text-color);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            a:nth-child(1) {
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            a:nth-child(2) {
+                font-weight: 400;
+                font-size: 15px;
+            }
+         }
+    }
+
+    &-nav {
+        background-color: var(--bg-maincolor);
+        height: 65px;
+        padding: 18px 0 0 0 ;
+        &__navigation {
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: var(--text-color);
+                        font-weight: 400;
+                        font-size: 19px;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

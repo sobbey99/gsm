@@ -1,0 +1,25 @@
+.main {
+    background: url('../img/mainbg.jpg') center center / cover no-repeat;
+    min-height: 490px;
+    color: var(--text-color);
+    padding: 40px 0px;
+    position: relative;
+    z-index: -3;
+    &__promo {
+        width: 770px;
+        margin: 0 auto;
+        background-color: var(--bg-maincolor);
+        text-align: center;
+        padding: 50px 25px 70px 25px;
+        border: 1px solid #000;
+        h1 {
+            font-weight: 600;
+            font-size: 45px;
+            margin-bottom: 35px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 17px;
+        }
+    }
+}
