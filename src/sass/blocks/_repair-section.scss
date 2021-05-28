@@ -1,0 +1,85 @@
+.repair {
+    padding: 70px 0;
+    &__title {
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 50px;
+        a {
+            text-decoration: underline;
+            color: #000;
+        }
+    }
+    &-item {
+        color: var(--text-color);
+        background: var(--bg-maincolor);
+        padding: 30px 40px 20px 20px;
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            p {
+               margin: 2px 0;
+            }
+        }
+        &__image {
+            width: 250px;
+            text-align: center;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 570px);
+        justify-content: center;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+    &__info {
+        padding: 50px 0 40px 0;
+        width: 970px;
+        margin: 0 auto;
+        background: var(--bg-maincolor);
+        color: var(--text-color);
+        border-radius: 11px;
+        div {
+            text-align: center;
+        }
+        ul {
+            width: 655px;
+            margin:0 auto 50px auto;
+            list-style-type: none;
+            li {
+                font-weight: 400;
+                font-size: 30px;
+                position: relative;
+            }
+            .information::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #C4C4C4;
+                position: absolute;
+                top: 18px;
+                left: -20px;
+            }
+        }
+    }
+}

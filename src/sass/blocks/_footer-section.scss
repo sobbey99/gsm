@@ -23,7 +23,7 @@
         &__list {
             list-style-type: none;
             li {
-                margin-top: 40px;
+                margin-top: 30px;
                 a {
                     text-decoration: none;
                     font-weight: 400;
@@ -67,5 +67,20 @@
                 }
             }
         }
+    }
+   
+}
+
+.stepstudio__sign {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    .stepstudioWeb {
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
     }
 }

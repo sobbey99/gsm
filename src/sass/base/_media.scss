@@ -1,0 +1,389 @@
+@media  screen and (max-width: 1400px) {
+    
+}
+
+/*DONE*/
+
+@media  screen and (max-width: 1200px) {
+    .header-main, .header-call, .header-nav {
+        .container {
+            max-width: none;
+        }
+    }
+    .header-main__contacts a:nth-child(1) {
+        font-size: 14px;
+    }
+    .phone__rightside .phone-descr, .phone__leftside .phone-descr {
+        width: 180px;
+    }
+    .phone__leftside {
+        left: -230px;
+    }
+    .phone-descr__text {
+        width: auto;
+    }
+    .phone__rightside {
+        right: -210px;
+    }
+    .phone__rightside .phone-descr__text_wd290 {
+        width: auto;
+    }
+    .phone__bottomside .phone-descr {
+        width: 280px;
+        .phone-descr__text {
+            width: auto;
+        }
+    }
+    .phone__bottomside {
+        width: 770px;
+        bottom: -120px;
+    }
+    .phone-descr_off {
+        display: none;
+    }
+    .header-main__descr p.first {
+        font-size: 15px;
+    }
+    .ways .container {
+        max-width: none;
+        .ways-item {
+            width: 300px;
+        }
+        .ways__title {
+            font-size: 40px;
+        }
+        .ways-item__counter {
+            font-size: 50px;
+        }
+    }
+    .ouraddress {
+        .container {
+            max-width: none;
+        }
+        &__image {
+            width: 90%;
+            height: auto;
+        }
+    }
+    .insurance {
+        .container {
+            max-width: none;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .buysell {
+        &__title {
+            font-size: 40px;
+        }
+    }
+    .info {
+        .container {
+            max-width: none;
+        }
+        p {
+            font-size: 34px;
+        }
+    }
+    .footer {
+        .container {
+            max-width: none;
+        }
+        &__wrapper {
+            padding: 0 30px;
+        }
+        &__logo {
+            margin-right: 70px;
+        }
+        &-navigation__list {
+            width: 200px;
+        }
+        &-navigation {
+            align-items: flex-start;
+            margin-right: 200px;
+        }
+    }
+    .advantages {
+        &__item {
+            min-width: none;
+            max-width: none;
+            width: 220px;
+            p {
+                width: 170px;
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 991px) {
+.header-main, .header-nav {
+    display: none;
+}
+.header-navphoneversion {
+    display: block;
+}
+.header-main_phoneversion {
+    display: block;
+    padding: 0 15px;
+    .header-main__descr {
+        padding-left: 125px;
+        width: 425px;
+        padding-right: 0;
+        p.first {
+            font-size: 15px;
+        }
+    }
+}
+.main {
+    &__promo {
+        width: 100%;
+    }
+}
+
+.brands {
+    &__wrapper {
+        width: 100%;
+        padding: 0 15px;
+    }
+    &__item {
+        width: 32%;
+    }
+}
+
+.advantages {
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    &__item {
+        width: 30%;
+        min-width: auto;
+        margin:0;
+        p {
+            width: 130px;
+        }
+    }
+    &__icon {
+        margin-right: 15px;
+    }
+    &__title {
+        font-size: 16px;
+    }
+    &__wrapper {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    &__descr {
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+.phone {
+    margin: 0;
+}
+
+.phone__smartphone {
+    width: 400px;
+}
+.phone__leftside .phone-descr, .phone__rightside .phone-descr {
+    margin-bottom: 30px;
+    &::after {
+        width: 35px;
+        height: 35px;
+        right: -55px;
+    }
+    width: 200px;
+}
+
+.phone__rightside .phone-descr {
+    &::after {
+        left: -35px;
+    }
+    margin-bottom: 10px;
+    padding: 25px 0 0 15px;
+    width: 165px;
+}
+
+.phone__leftside .phone-descr {
+    margin-bottom: 80px;
+    width: 145px;
+}
+
+.phone__leftside {
+    left: -175px;
+}
+
+.phone__rightside .phone-descr_modified::after {
+    left: -50px;
+    top: 20px;
+}
+
+.phone-descr {
+    &__title {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    &__text {
+        font-size: 13px;
+    }
+    &_marginbottom {
+        margin-top: 50px;
+    }
+    &_off {
+        display: block;
+    }
+}
+
+.phone__bottomside .phone-descr {
+    &::after {
+        width: 35px;
+        height: 35px;
+    }
+    width: 170px;
+}
+.phone__bottomside {
+    bottom: 5px;
+    width: 530px;
+}
+
+.phone__rightside {
+    right: -170px;
+}
+.phone__title {
+    font-size: 35px;
+}
+
+.insurance {
+    p {
+        font-size: 13px;
+    }
+}
+
+.details {
+    &__wrapper {
+        padding-left: 0;
+        width: auto;
+    }
+}
+
+.ways{
+    .container {
+        padding: 0;
+        h3.ways__title {
+            font-size: 30px;
+        }
+    }
+    &-item {
+        min-height: 380px;
+        padding: 20px;
+        width: 230px !important;
+        &__icon {
+            width: 120px;
+            height: 120px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__text{
+            font-size: 13px;
+        }
+    }
+    &__wrapper {
+        padding: 0 10px;
+    }
+}
+
+
+.ouraddress {
+    &__title {
+        font-size: 34px;
+    }
+}
+
+.info {
+    padding: 50px 0;
+    p {
+        font-size: 24px;
+    }
+}
+
+.footer {
+    &-navigation {
+        margin-right: 20px;
+    }
+}
+
+/* CLOSING */
+}
+
+
+
+
+
+@media  screen and (max-width: 776px) {
+    .header-main_phoneversion .header-main__descr {
+        width: 350px;
+    }
+    .header-navphoneversion {
+        width: 80%;
+    }
+    .header-main__contacts {
+        display: none;
+    }
+
+    .main {
+        h1 {
+            font-size: 35px;
+        }
+        &__promo {
+            padding-bottom: 30px;
+        }
+    }
+    .brands__wrapper .brands__item:nth-child(2){
+           img {
+               width: 100%;
+           }
+    }
+    .advantages__icon {
+        svg {
+            width: 35px;
+        }
+    }
+    .advantages__item p {
+        width: 100px;
+    }
+    .advantages__title {
+        font-size: 14px;
+    }
+    .brands__item {
+        padding:0 10px;
+    }
+
+    .phone__smartphone {
+        width: 200px;
+        height: 260px;
+    }
+
+    .phone__leftside {
+        left: -180px;
+        top: 0;
+        .phone-descr {
+            margin-bottom: 0;
+            &::after {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    .phone__bottomside {
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 575px) {
+    
+}
