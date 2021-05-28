@@ -114,6 +114,54 @@
             }
         }
     }
+
+
+    .repair {
+        .container {
+            max-width: none;
+            padding: 0;
+        }
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 15px 30px 15px;
+        }
+        &-item {
+            padding: 30px 20px 20px 20px;
+            &__image {
+                margin-right: 10px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+        }
+        &__info {
+            width: 90%;
+        }
+      
+    }
+
+    .unlocking-item__image {
+        position: relative !important;
+        transform: none;
+        margin-bottom: 15px;
+        &_left, &_right {
+            left: auto;
+            right: auto;
+        }
+    }
+
+    .unlocking-item_h240px {
+        height: auto;
+    }
+    .unlocking-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_mb0{
+            margin-bottom: 0;
+        }
+    }
+    /* END MEDIA REQUEST */
 }
 
 @media  screen and (max-width: 991px) {
@@ -316,7 +364,63 @@
         margin-right: 20px;
     }
 }
+.repair {
+    padding: 40px 0;
+    &__title {
+        font-size: 35px;
+    }
+    &__subtitle {
+        font-size: 21px;
+    }
+    &-item {
+        &__image {
+            width: 180px;
+            img {
+                width: 100%;
+            }
+        }
+        &__title {
+            font-size: 25px;
+        }
+    }
+    &__info {
+        ul {
+            width: 70%;
+            li {
+                font-size: 23px;
+            }
+        }
+    }
+}
 
+.repair__info ul .information::before {
+    top: 13px;
+}
+
+.repair__info ul li {
+    font-size: 20px;
+}
+
+.range {
+    padding: 40px 0;
+    &-descr {
+        width: 90%;
+        &-grid {
+            padding: 30px 0;
+            justify-content: space-around;
+        }
+    }
+}
+
+.process-about {
+    width: 90%;
+    p {
+        font-size: 16px;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+}
 /* CLOSING */
 }
 
@@ -333,6 +437,13 @@
     }
     .header-main__contacts {
         display: none;
+    }
+    .header-call__wrapper {
+        a {
+            height: 45px;
+            padding: 12px 35px;
+            font-size: 17px;
+        }
     }
 
     .main {
@@ -363,6 +474,9 @@
         padding:0 10px;
     }
 
+    .phone {
+        padding-bottom: 200px;
+    }
     .phone__smartphone {
         width: 200px;
         height: 260px;
@@ -372,18 +486,485 @@
         left: -180px;
         top: 0;
         .phone-descr {
-            margin-bottom: 0;
+            margin-bottom: 20px;
             &::after {
                 width: 25px;
                 height: 25px;
+                
             }
         }
     }
-    .phone__bottomside {
-        display: none;
+    .phone-descr__text {
+        font-size: 11px;
     }
+    .phone__rightside {
+        .phone-descr {
+            margin-bottom: 20px;
+            width: 155px;
+            padding: 0;
+            &_marginbottom {
+                margin-top: 0;
+            }
+            &::after {
+                width: 25px;
+                height: 25px;
+                left: -30px;
+                
+            }
+            &_off {
+                &::after {
+                    top: 0px;
+                    left: -45px;
+                }
+            }
+            &_modified {
+                &::after {
+                    top: 20px;
+                    left: -45px;
+                }
+            }
+        }
+    }
+
+
+    .phone__bottomside {
+        bottom: -130px;
+        width: 450px;
+        .phone-descr {
+            &::after {
+                width: 25px;
+                height: 25px;
+                top: -88px;
+            }
+        }
+    }
+    .ways .container h3.ways__title {
+        font-size: 23px;
+    }
+    .ways-item {
+        width: 32% !important;
+        padding: 0 20px;
+        &__title {
+            font-size: 20px;
+        }
+    }
+
+    .buysell {
+        &__title {
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+    }
+
+    .footer {
+        &__logo {
+            margin-right: 10px;
+        }
+        &__wrapper {
+            padding: 0;
+        }
+        &-navigation__list {
+            width: 180px;
+        }
+        &-navigation {
+            margin-right: 0;
+            &__title {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+            &__list {
+                li {
+                    margin-top: 25px;
+                }
+                li:nth-child(1) {
+                    margin-top: 0px;
+                }
+            }
+        }
+        &-info__text {
+            font-size: 16px;
+            a {
+                font-size: 16px;
+            }
+        }
+        &-info {
+            &__title {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+            &__icon {
+                svg {
+                    width: 40px;
+
+                }
+            }
+        }
+        &__wrapper {
+            justify-content: space-between;
+        }
+    }
+    .stepstudio__sign {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .ouraddress__title {
+        font-size: 26px;
+    }
+    .repair {
+        &-item {
+            &__wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__image {
+                width: 80%;
+                height: 210px;
+                margin: 0 0 20px 0;
+                img {
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            &__title {
+                font-size: 18px;
+            }
+            &__text {
+                text-align: center;
+            }
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+    }
+    .repair {
+        &-item {
+            padding-left: 5px;
+            padding-right: 5px;
+            &__text {
+                font-size: 14px;
+            }
+            
+        }
+        &__subtitle {
+            margin-bottom: 25px;
+        }
+    }
+
+    .repair__info ul li {
+        font-size: 17px;
+    }
+    .repair__info ul .information::before {
+        top: 8px;
+    }
+
+    .range {
+        &-descr {
+            &-item {
+                &__text {
+                    font-size: 14px;
+                    padding: 0 2px;
+                }
+            }
+        }
+    }
+
+
+    .unlocking {
+        padding: 10px 0 70px 0;
+        &-item {
+            &__image {
+                width: 175px;
+                img {
+                    width: 100%;
+                }
+            }
+            &__title {
+                font-size: 14px;
+            }
+            &__subtitle {
+                font-size: 14px;
+            }
+        }
+        &__subtitle {
+            font-size: 17px;
+        }
+    }
+    /*Finish*/
 }
 
 @media  screen and (max-width: 575px) {
-    
+    .header-navphoneversion .header-nav_list li a {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .header-navphoneversion__social a {
+        margin: 0;
+    }
+    .header-navphoneversion__social {
+        display: flex;
+        justify-content: space-around;
+    }
+    .header-main_phoneversion .header-main__descr {
+        display: none;
+    }
+    .header-main__wrapper {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        right: 0;
+    }
+    .header-call__wrapper {
+        justify-content: center;
+    }
+    .header-call {
+        margin: 25px 0;
+    }
+    .main {
+        &__promo {
+            padding: 20px 5px;
+        }
+        h1 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .brands {
+        &__item {
+            img {
+                width: 100%;
+                height: 90%;
+                object-fit: contain;
+            }
+            height: 120px;
+        }
+        &__wrapper {
+            top: -15px
+        }
+    }
+    .advantages__item {
+        flex-direction: column;
+        p {
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    .advantages__icon {
+        margin-right: 0;
+        svg {
+            width: 45px;
+            height: 60px;
+        }
+    }
+    .advantages__title {
+        font-size: 11px;
+        text-align: center;
+    }
+    .phone__smartphone {
+        width: 140px;
+    }
+    .phone__leftside{
+        .phone-descr {
+            width: 70px;
+        }
+    }
+    .phone-descr__text {
+        display: none !important;
+    }
+    .phone-descr__title {
+        font-size: 13px;
+    }
+    .phone__leftside {
+        left: -80px;
+    }
+    .phone__leftside .phone-descr::after {
+        width: 15px;
+        height: 15px;
+        right: -22px;
+    }
+    .phone__leftside .phone-descr {
+        margin-bottom: 45px;
+    }
+    .phone__rightside .phone-descr::after {
+        width: 15px;
+        height: 15px;
+        left: -19px;
+    }
+    .phone__rightside .phone-descr {
+        width: 70px;
+    }
+    .phone__rightside {
+        right: -78px;
+        top: -5px;
+    }
+    .phone__rightside .phone-descr_modified::after {
+        top: 1px;
+        left: -22px;
+    }
+    .phone__bottomside {
+        bottom: 55px;
+        width: 220px;
+        .phone-descr {
+            width: auto;
+        }
+    }
+    .phone__bottomside .phone-descr::after {
+        width: 15px;
+        height: 15px;
+        top: -35px;
+        right: -55px;
+    }
+    .phone__title {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .phone {
+        padding: 20px 0 0 0;
+    }
+    .details {
+        padding: 80px 0 0 0;
+        &__title {
+            width: auto;
+            font-size: 30px;
+        }
+    }
+    .ways {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &-item {
+            width: 90% !important;
+            min-height: 340px;
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+    .ouraddress {
+        padding: 25px 0;
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+    .buysell {
+        min-height: 450px;
+        padding: 70px 0 60px 0;
+        &__title {
+            font-size: 28px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+    }
+    .info {
+        padding: 30px 0;
+        p {
+            font-size: 15px;
+        }
+    }
+    .footer {
+        &__logo {
+            display: none;
+        }
+        &-navigation {
+            &__list {
+                width: 160px;
+                li a {
+                    font-size: 15px;
+                }
+                 li{
+                     margin-top: 45px;
+                 }
+            }
+            &__title {
+                font-size: 17px;
+                margin-bottom: 30px;
+            }
+        }
+        &-info {
+            &__title {
+                font-size: 17px;
+                margin-bottom: 15px;
+            }
+            &__item {
+                flex-direction: column;
+
+            }
+            &__icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            &__text {
+                font-size: 13px;
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .stepstudio__sign {
+        span {
+            display: none;
+        }
+    }
+    .repair {
+        padding: 0 0 40px 0;
+        &__title {
+            font-size: 28px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+        &__info {
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .repair__info ul .information::before {
+            display: none;
+    }
+
+    .range {
+        padding: 0 0 30px 0;
+        &-descr {
+            &__title {
+                letter-spacing: 0.1em;
+                font-size: 21px;
+            }
+            &-item {
+                &__text {
+                    text-align: center;
+                }
+            }
+            &-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    .process {
+        height: 480px;
+        &-about {
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    /* END MEDIA REQUEST */
 }
