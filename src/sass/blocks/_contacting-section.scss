@@ -5,16 +5,16 @@
         margin-bottom: 55px;
     }
     &__wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
         justify-content: space-between;
+        row-gap: 30px;
     }
     &-item {
         padding: 40px 0 50px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 270px;
-        height: 400px;
         box-shadow: -10px 10px 15px 5px rgba(0, 0, 0, 0.4);
         border-radius: 5px;
         &__img {
@@ -28,11 +28,13 @@
         &__subtitle {
             font-weight: 400;
             font-size: 22px;
+            text-align: center;
             a {
                 font-weight: 400;
                 font-size: 22px;
                 color: #000;
                 text-decoration: none;
+                text-align: center;
                 &:hover {
                     text-decoration: underline;
                 }

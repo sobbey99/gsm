@@ -161,6 +161,14 @@
             margin-bottom: 0;
         }
     }
+
+
+    .contacting {
+        &__wrapper {
+            grid-template-columns: repeat(2, 350px);
+            justify-content: space-around;
+        }
+    }
     /* END MEDIA REQUEST */
 }
 
@@ -420,6 +428,16 @@
     &__title {
         margin-bottom: 20px;
     }
+}
+
+.contacting {
+    &__wrapper {
+        grid-template-columns: repeat(2, 320px);
+    }
+}
+
+.formsection .form {
+    width: 90%;
 }
 /* CLOSING */
 }
@@ -689,6 +707,15 @@
         &__subtitle {
             font-size: 17px;
         }
+    }
+
+    .contacting {
+        &__wrapper {
+            grid-template-columns: repeat(2, 240px);
+        }
+    }
+    .formsection .form button.submit {
+        align-self: center;
     }
     /*Finish*/
 }
@@ -964,6 +991,12 @@
             p {
                 margin-bottom: 15px;
             }
+        }
+    }
+
+    .contacting {
+        &__wrapper {
+            grid-template-columns: 1fr;
         }
     }
     /* END MEDIA REQUEST */
