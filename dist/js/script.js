@@ -36,18 +36,27 @@ $(document).ready(function () {
             }
         } );
 
+
+
+        $('.modal-thankyou__close').on('click', function() {
+            $('#thankyou').fadeOut()
+        })
+
         $('.form').submit( function(e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
             url: "form.php",
-            data: $(this).serialize().done( function() {
+            data: $(this).serialize()
+        }).done( function() {
                 $(this).find("input").val("");
-                
+                $('#thankyou').fadeIn('slow');
+                $('form.form').trigger("reset");
             })
-        })
+        
 
         return false
         });
+
 
 });

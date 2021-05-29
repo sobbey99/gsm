@@ -717,6 +717,10 @@
     .formsection .form button.submit {
         align-self: center;
     }
+
+    .modal-thankyou {
+        width: 90%;
+    }
     /*Finish*/
 }
 
@@ -998,6 +1002,15 @@
         &__wrapper {
             grid-template-columns: 1fr;
         }
+    }
+    .modal-thankyou__title {
+        font-size: 28px;
+    }
+    .modal-thankyou__subtitle {
+        font-size: 18px;
+    }
+    .modal-thankyou {
+        height: 270px;
     }
     /* END MEDIA REQUEST */
 }
