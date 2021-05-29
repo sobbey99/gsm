@@ -14,6 +14,10 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('header-navphoneversion_active');
         })
     })
+    menu.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('header-navphoneversion_active');
+    })
 });
 
         $('.form').validate ( {
@@ -56,4 +60,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
         return false
         });
+
+        new WOW().init();
 
