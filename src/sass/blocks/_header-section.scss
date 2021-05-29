@@ -64,6 +64,12 @@
                 font-size: 15px;
             }
          }
+         &__sociallink {
+             transition: 450ms all ease;
+             &:hover {
+                 transform: rotate(360deg);
+             }
+         }
     }
 
     &-nav {
